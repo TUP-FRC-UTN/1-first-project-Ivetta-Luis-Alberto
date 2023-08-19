@@ -14,8 +14,12 @@ export class Punto03Component implements OnInit {
   nombre: string = "panchito"
   raza: string = "calle"
   sexo: string = "machito"
-  anio: number = 5
+  edad: number = 5
   nacimiento: number = 2017
   tutor: string = "juanito"
 
+
+  sumarEdad() {
+    this.edad++;
+  }
 }
