@@ -1,4 +1,16 @@
 <div class="container">
     <p>punto05 works!</p>
-</div>
+    <p>puede usar esta ruta: https://storage.gra.cloud.ovh.net/v1/AUTH_296c7803aa594af69d39b970927c8fb9/media/uploads/CosplayEXP/2018/04/03/link_9g4ByiE.jpg</p>
 
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Ingresar Ruta</span>
+        <input type="text" [(ngModel)]="textoCapturado">
+    </div>
+
+     <button type="button" class="btn btn-primary" (click)="cargarRuta()">Cargar y mostrar</button>
+
+     <div>
+        <img [src]="rutaParaMostrar" alt="">
+    </div>
+
+</div>

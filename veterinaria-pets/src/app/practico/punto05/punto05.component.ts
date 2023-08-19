@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-punto05',
@@ -11,5 +12,16 @@ export class Punto05Component implements OnInit {
 
   ngOnInit(): void {
   }
+
+  textoCapturado : string = "";
+  rutaParaMostrar : string = "";
+
+  cargarRuta() { 
+    alert("Cargando ruta: " + this.textoCapturado);
+
+    this.rutaParaMostrar = this.textoCapturado;
+  }
+
+
 
 }

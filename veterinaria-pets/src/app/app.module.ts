@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { Punto02Component } from './practico/punto02/punto02.component';
 import { Punto03Component } from './practico/punto03/punto03.component';
 import { Punto05Component } from './practico/punto05/punto05.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { Punto05Component } from './practico/punto05/punto05.component';
     Punto05Component
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
