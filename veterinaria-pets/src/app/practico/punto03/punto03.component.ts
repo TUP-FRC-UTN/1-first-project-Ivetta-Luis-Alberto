@@ -22,4 +22,12 @@ export class Punto03Component implements OnInit {
   sumarEdad() {
     this.edad++;
   }
+
+    //va a venir del hijo .. rango
+  
+    valorRecibido: number = 0.8;
+
+    recibirValor(event: number) {
+      this.valorRecibido = event;
+    }
 }
