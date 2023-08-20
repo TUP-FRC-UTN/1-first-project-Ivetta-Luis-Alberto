@@ -7,6 +7,7 @@ import { Punto03Component } from './practico/punto03/punto03.component';
 import { Punto05Component } from './practico/punto05/punto05.component';
 import { FormsModule } from '@angular/forms';
 import { Punto06Component } from './practico/punto06/punto06.component';
+import { Punto09Component } from './practico/punto09/punto09.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { Punto06Component } from './practico/punto06/punto06.component';
     Punto02Component,
     Punto03Component,
     Punto05Component,
-    Punto06Component
+    Punto06Component,
+    Punto09Component
   ],
   imports: [
     BrowserModule,
