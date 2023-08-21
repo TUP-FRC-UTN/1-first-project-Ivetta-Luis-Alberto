@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Punto09Component implements OnInit {
 
-  variable: number = 0; // Variable inicial
+  incremento: number = 0; // Variable inicial
 
   constructor() { }
 
@@ -20,10 +20,10 @@ export class Punto09Component implements OnInit {
     let secondsPassed = 0;
   
     const interval = setInterval(() => {
-      this.variable += 10; // Aumentar la variable en 1 punto
+      this.incremento += 10; // Aumentar la variable en 1 punto
       secondsPassed += 1; // Aumentar los segundos transcurridos
   
-      console.log(`Variable: ${this.variable}, Segundos: ${secondsPassed}`);
+      console.log(`Variable: ${this.incremento}, Segundos: ${secondsPassed}`);
   
       if (secondsPassed >= 10) {
         clearInterval(interval); // Detener el intervalo después de 10 segundos

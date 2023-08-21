@@ -30,4 +30,6 @@ export class Punto03Component implements OnInit {
     recibirValor(event: number) {
       this.valorRecibido = event;
     }
+
+   
 }
