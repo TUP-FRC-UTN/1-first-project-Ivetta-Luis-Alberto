@@ -1,1 +1,17 @@
-<p>punto10 works!</p>
+<div class="container">
+    
+    <div class="row">
+        <div class="col-9">
+            <p class="text-danger text-center">Punto 10: Titulo cambiante</p>
+            <h1 [class]="colorTitulo">Listado Mascotas</h1>
+            <br>
+        </div>
+        <div class="col-3">
+            <select class="form-select" [(ngModel)]="colorSeleccionado" (change)="enviarMsj()" >
+                <option selected *ngFor="let item of opcionColor"> {{item}}</option>                
+              </select>
+        </div>
+    </div>
+
+
+</div>

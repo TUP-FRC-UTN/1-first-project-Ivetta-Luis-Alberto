@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-punto10',
@@ -7,9 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Punto10Component implements OnInit {
 
-  constructor() { }
-
   ngOnInit(): void {
   }
 
+  constructor() { }
+
+  opcionColor = ["verde", "azul", "rojo"]
+
+  colorSeleccionado: string = "";
+  @Output() colorEnviado = new EventEmitter<string>();
+
+  colorTitulo: string = "";
+
+  enviarMsj() {
+    this.colorEnviado.emit(this.colorSeleccionado);
+
+    if (this.colorSeleccionado == "verde") {
+      this.colorTitulo = "text-center text-" + "success";
+    }
+
+    if (this.colorSeleccionado == "azul") {
+      this.colorTitulo = "text-center text-" + "primary";
+    }
+
+    if (this.colorSeleccionado == "rojo ") {
+      this.colorTitulo = "text-center text-" + "danger";
+    }
+  }
 }

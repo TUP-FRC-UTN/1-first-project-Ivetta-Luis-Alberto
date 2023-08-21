@@ -32,5 +32,13 @@ export class Punto03Component implements OnInit {
     }
 
     variable_check: boolean = true;
+
+
+    //va a venir del hijo, cambio color titulo
+    colorRecibido: string = "";
+
+    recibirColor(color: string) {
+      this.colorRecibido = color;
+    }
    
 }
