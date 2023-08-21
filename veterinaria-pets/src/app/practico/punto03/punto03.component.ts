@@ -31,5 +31,6 @@ export class Punto03Component implements OnInit {
       this.valorRecibido = event;
     }
 
+    variable_check: boolean = true;
    
 }
