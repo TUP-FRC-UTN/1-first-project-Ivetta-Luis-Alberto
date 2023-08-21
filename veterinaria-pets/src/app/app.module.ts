@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CalcularEdadPipe } from './calcular-edad.pipe';
 
 import { AppComponent } from './app.component';
 import { Punto02Component } from './practico/punto02/punto02.component';
@@ -14,6 +15,7 @@ import { Punto10Component } from './practico/punto10/punto10.component';
 import { Punto11Component } from './practico/punto11/punto11.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,8 @@ import { Punto11Component } from './practico/punto11/punto11.component';
     Punto07Component,
     Punto08Component,
     Punto10Component,
-    Punto11Component
+    Punto11Component,
+    CalcularEdadPipe
   ],
   imports: [
     BrowserModule,

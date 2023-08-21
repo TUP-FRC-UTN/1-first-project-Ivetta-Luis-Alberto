@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Punto08Component implements OnInit {
 
-
+   mostrar: boolean = false;
 
   coleccionMascotas: IMascota [] = [
     {
@@ -39,6 +39,7 @@ export class Punto08Component implements OnInit {
 
   ngOnInit(): void {
   }
+
 
 }
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CalcularEdadPipe } from 'src/app/calcular-edad.pipe';
 
 @Component({
   selector: 'app-punto11',
@@ -11,5 +12,8 @@ export class Punto11Component implements OnInit {
 
   ngOnInit(): void {
   }
+
+  edad: any = CalcularEdadPipe.prototype.transform(2017);
+  
 
 }
