@@ -7,16 +7,16 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class Punto06Component implements OnInit {
 
-  @Output() valorCambiado = new EventEmitter<number>();
+  @Output() variableEmisora = new EventEmitter<number>();
   
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  valorSeleccionado: number = 0.8;
+  valorDelRange: number = 0.8;
 
-  onChangeValor() {
-    this.valorCambiado.emit(this.valorSeleccionado);
+  funcionEmisora() {
+    this.variableEmisora.emit(this.valorDelRange);
   }
 }

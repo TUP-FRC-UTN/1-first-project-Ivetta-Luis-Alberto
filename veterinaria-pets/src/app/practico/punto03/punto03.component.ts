@@ -27,8 +27,8 @@ export class Punto03Component implements OnInit {
   
     valorRecibido: number = 0.8;
 
-    recibirValor(event: number) {
-      this.valorRecibido = event;
+    funcionRecibirValor(parametro: number) {
+      this.valorRecibido = parametro;
     }
 
     variable_check: boolean = true;
