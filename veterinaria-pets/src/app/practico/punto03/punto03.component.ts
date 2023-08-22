@@ -37,7 +37,7 @@ export class Punto03Component implements OnInit {
     //va a venir del hijo, cambio color titulo
     colorRecibido: string = "";
 
-    recibirColor(color: string) {
+    funcionRecibirColor(color: string) {
       this.colorRecibido = color;
     }
    

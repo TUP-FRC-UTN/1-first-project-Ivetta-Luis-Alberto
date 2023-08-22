@@ -8,7 +8,7 @@
         </div>
         <div class="col-3">
             <p>Seleccione el tipo de titulo</p>
-            <select class="form-select" [(ngModel)]="colorSeleccionado" (change)="enviarMsj()" >
+            <select class="form-select" [(ngModel)]="colorSeleccionado" (change)="funcionEnviarColor()" >
                 <option selected *ngFor="let item of opcionColor"> {{item}}</option>                
               </select>
         </div>

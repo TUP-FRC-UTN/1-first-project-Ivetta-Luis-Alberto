@@ -15,12 +15,12 @@ export class Punto10Component implements OnInit {
   opcionColor = ["verde", "azul", "rojo"]
 
   colorSeleccionado: string = "rojo";
-  @Output() colorEnviado = new EventEmitter<string>();
+  @Output() emitirColor = new EventEmitter<string>();
 
   colorTitulo: string = "text-center text-danger";
 
-  enviarMsj() {
-    this.colorEnviado.emit(this.colorSeleccionado);
+  funcionEnviarColor() {
+    this.emitirColor.emit(this.colorSeleccionado);
 
     if (this.colorSeleccionado == "verde") {
       this.colorTitulo = "text-center text-" + "success";
