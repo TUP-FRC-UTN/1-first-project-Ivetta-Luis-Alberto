@@ -17,21 +17,21 @@ export class Punto10Component implements OnInit {
   colorSeleccionado: string = "rojo";
   @Output() emitirColor = new EventEmitter<string>();
 
-  colorTitulo: string = "text-center text-danger";
+  propiedadTitulo: string = "text-center text-danger";
 
   funcionEnviarColor() {
     this.emitirColor.emit(this.colorSeleccionado);
 
     if (this.colorSeleccionado == "verde") {
-      this.colorTitulo = "text-center text-" + "success";
+      this.propiedadTitulo = "text-center text-" + "success";
     }
 
     if (this.colorSeleccionado == "azul") {
-      this.colorTitulo = "text-center text-" + "primary";
+      this.propiedadTitulo = "text-center text-" + "primary";
     }
 
-    if (this.colorSeleccionado == "rojo ") {
-      this.colorTitulo = "text-center text-" + "danger";
+    if (this.colorSeleccionado == "rojo") {
+      this.propiedadTitulo = "text-center text-" + "danger";
     }
   }
 }

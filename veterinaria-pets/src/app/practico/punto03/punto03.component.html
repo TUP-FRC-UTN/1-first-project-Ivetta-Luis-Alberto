@@ -1,18 +1,17 @@
 <div class="container">
     <p class="text-danger">Punto 3: Card de Bootrap</p>
 
-    <app-punto10 (colorEnviado)="funcionRecibirColor($event.toString())"></app-punto10>
-
-    color que viene del hijo: {{colorRecibido}}
-
+    <app-punto10 (emitirColor)="funcionRecibirColor($event.toString())"></app-punto10>
+    Este color que viene del hijo (componente 10): {{colorRecibido}}
 </div>
 
 
 <div class="container">
-    <p>Valor de opacidad recibido desde el hijo: {{valorRecibido}}</p>
-    <p>Se maneja desde componente 6</p>
+    <br>
+    <p>Esta opacidad se maneja del componente hijo (componente 6): {{valorRecibido}}</p>
 
-    <p class="text-danger">Punto 7: mostrar ocultar imagen </p>
+
+    <p class="text-danger">Punto 7: mostrar ocultar imagen con check</p>
     check: <input type="checkbox" [(ngModel)]="variable_check">
     <!-- (change)="onChangeCheck()" -->
 
@@ -39,7 +38,7 @@
                             <button type="button" class="btn btn-primary m-1" (click)="sumarEdad()">
                                 Agregar años
                             </button>
-                            <p class="text-danger">Punto 4: modificar años</p>
+                            <p class="text-danger">Punto 4: modificar años con boton</p>
 
                         </div>
                     </div>
