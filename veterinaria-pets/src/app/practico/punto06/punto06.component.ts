@@ -14,6 +14,7 @@ export class Punto06Component implements OnInit {
   ngOnInit(): void {
   }
 
+  ocultarMostrarRango: boolean = false;
   valorDelRange: number = 0.8;
 
   funcionEmisora() {

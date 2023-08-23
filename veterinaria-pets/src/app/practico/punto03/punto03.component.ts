@@ -31,7 +31,7 @@ export class Punto03Component implements OnInit {
       this.valorRecibido = parametro;
     }
 
-    variable_check: boolean = true;
+    mostrarOcultar: boolean = true;
 
 
     //va a venir del hijo, cambio color titulo
